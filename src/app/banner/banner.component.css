@@ -1,0 +1,28 @@
+.banner {
+    width: 50%;
+}
+
+.container-banner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-banner h2, .container-banner p {
+    color: #fff;
+}
+
+.container-banner h2 {
+    font-family:"Lora-Bold";
+    font-size: 18px;
+}
+
+.container-banner p {
+    font-family: "Lora-Bold";
+    font-size: 24px;
+}
+
+.container-banner h1 {
+    color: #69d1eb;
+    font-family: "Rubik-Bold";
+    font-size: 36px;
+}

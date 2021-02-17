@@ -1,0 +1,123 @@
+.questoes {
+  padding-bottom: 30px;
+}
+
+.quest-1 h2 {
+  color: #204d77;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Lora-Bold";
+  font-size: 18px;
+}
+
+.quest-2 h2 {
+  color: #204d77;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Lora-Bold";
+  font-size: 18px;
+}
+
+.quest-3 h2 {
+  color: #204d77;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Lora-Bold";
+  font-size: 18px;
+}
+
+.formulario-final {
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+
+}
+
+.ng-invalid.ng-touched:not(form) {
+  border: 1px solid red!important;
+}
+
+.formulario-final label {
+  color: #204d77;
+  padding-top: 10px;
+  display: inline-block;
+  font-family: "Lora-Bold";
+  font-size: 18px;
+}
+
+.formulario-final input, .formulario-final textarea{
+  width: 100%;
+  border: 3px solid #204d77;
+  background-color: #d3d3c9;
+}
+
+.formulario-final textarea {
+  margin-bottom: 30px;
+}
+
+.agradecimento {
+  text-align: center;
+  display: flex;
+  height: 574px;
+  align-items: center;
+}
+
+@media (min-width: 934px) and (max-width: 1422px) {
+   
+  .box {
+      width: 93px;
+      margin: 0 5px;
+  }    
+}
+
+@media (max-width: 933px) {
+  .box {
+      width: 75px;
+      margin: 0 5px;
+  }    
+}
+
+@media (max-width: 811px) {
+  .box {
+      width: 65px;
+      margin: 0 5px;
+  }    
+}
+
+@media (min-width:361px) and (max-width: 414px) {
+  
+  .box {
+    width: 190px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .box {
+      width: 100px;
+  }
+}
+
+
+
+@media (min-width:321px) and (max-width: 360px) {
+  .questoes {
+    width: 91%;
+    height: auto;
+  }
+  .box {
+    width: 164px;
+    
+  }
+} 
+@media (max-width: 320px) {
+  .questoes {
+    width: 93%;
+    height: auto;
+  }    
+  .box {
+    width: 139px;
+    
+  }
+}  

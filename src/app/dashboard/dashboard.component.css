@@ -1,0 +1,7 @@
+.container-restrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 860px;
+  background-color: #204d77;
+}

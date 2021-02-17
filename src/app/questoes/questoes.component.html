@@ -1,0 +1,207 @@
+<div class="quest-1" *ngIf="open1">           
+  <h2>Qual desafio digital você tem?</h2>
+  <ul class="opcoes-resp" >
+      <li *ngFor="let check of listaChecks; let i=index">
+          <label for="resp{{i}}">
+              <div class="box">
+                  <img height="50px" [src]="check.img">
+                  <div class="" [ngClass]="check.tick ? 'tick':''">
+                      <img class="checado" src="./assets/images/tick.png" [ngClass]="check.tick ? 'positivo': ''">
+                  </div>
+              </div>
+              <input  id="resp{{i}}" type="checkbox" name="{{check.name}}" value="Sites-Reponsivos" (click)="changed(i,$event)" (change)="changedNotSelected(i,$event)" [(ngModel)]="check.tick">
+          </label>
+          <h3>{{check.name}}</h3>
+      </li>
+       
+        <!--<li>
+            <label for="resp2">
+                <div class="box">
+                    <img height="50px" src="./assets/images/landing-page.svg">
+                    <div class="tick" style="display: none;">
+                        <img src="./assets/images/tick.png">
+                    </div>
+                </div>
+                <input id="resp2" class="resp" type="checkbox" name="quest1" value="Landing-Pages" #campoCheck>
+            </label>    
+            <h3>Landing<br>Pages</h3>
+        </li>-->
+       <!--- <li>
+            <label for="resp3">
+                <div class="box">
+                    <img height="50px" src="./assets/images/aplicativos.svg">
+                    <div class="tick" style="display: none;">
+                        <img src="./assets/images/tick.png">
+                    </div>
+                </div>
+                <input id="resp3" class="resp" type="checkbox" name="quest1" value="Aplicativos-Moveis" #campoCheck>
+            </label>    
+            <h3>Aplicativos<br>Móveis</h3>
+        </li>
+        <li>
+            <label for="resp4">
+                <div class="box">
+                    <img height="50px" src="./assets/images/sistemas.svg">
+                    <div class="tick" style="display: none;">
+                        <img src="./assets/images/tick.png">
+                    </div>
+                </div>
+                <input id="resp4" class="resp" type="checkbox" name="quest1" value="Sistemas-Web" #campoCheck>
+            </label>    
+            <h3>Sistemas<br>Web</h3>
+        </li>-->  
+    </ul>
+    <div class="espaco-botao">
+        <button (click)="proximo()">PRÓXIMO</button>
+    </div>
+    <div class="barra-progresso">
+        <progress value="25" max="100"></progress>
+    </div>
+</div>
+
+<div class="quest-2" *ngIf="open2">
+  <h2>Qual a melhor forma de contato?</h2>
+  <ul class="opcoes-resp">
+      <li *ngFor="let check of listaChecks2; let i=index">
+          <label for="resp{{i}}">    
+              <div class="box">
+                  <img height="65px" [src]="check.img">
+                  <div class="" [ngClass]="check.tick ? 'tick':''">
+                      <img class="checado" src="./assets/images/tick.png" [ngClass]="check.tick ? 'positivo': ''">
+                  </div>
+              </div>
+              <input id="resp{{i}}" class="resp" type="checkbox" name="quest1" value="Email"  (click)="changed2(i,$event)" (change)="changedNotSelected2(i,$event)" [(ngModel)]="check.tick">
+          </label>    
+          <h3>{{check.name}}</h3>    
+      </li>
+     <!-- <li>
+          <label for="resp6">
+              <div class="box">
+                  <img height="65px" src="./assets/images/telefone.svg">
+                  <div class="tick" style="display: none;">
+                      <img src="./assets/images/tick.png">
+                  </div>
+              </div>
+              <input id="resp6" class="resp" type="checkbox" name="quest1" value="Telefone">
+          </label>    
+          <h3>Telefone</h3>  
+      </li>
+      <li>
+          <label for="resp7">
+              <div class="box">
+                  <img height="65px" src="./assets/images/whatsapp.svg">
+                  <div class="tick" style="display: none;">
+                      <img src="./assets/images/tick.png">
+                  </div>
+              </div>
+              <input id="resp7" class="resp" type="checkbox" name="quest1" value="WhatsApp">
+          </label>    
+          <h3>Whatsapp</h3>
+      </li>-->
+  </ul>
+  <div class="espaco-botao">
+      <button (click)="proximo()">PRÓXIMO</button>
+  </div>  
+  <div class="barra-progresso">
+       <progress value="50" max="100"></progress>
+  </div>    
+</div>
+
+<div class="quest-3" *ngIf="open3">
+  <h2>Qual melhor período para contato</h2>
+  <ul class="opcoes-resp">
+      <li *ngFor="let check of listaChecks3; let i=index">
+          <label for="resp{{i}}">
+              <div class="box">
+                  <img height="70px" [src]="check.img">
+                  <div class="" [ngClass]="check.tick ? 'tick':''">
+                      <img class="checado" src="./assets/images/tick.png" [ngClass]="check.tick ? 'positivo': ''">
+                  </div>
+              </div>
+              <input id="resp{{i}}" class="resp" type="checkbox" name="quest1" value="Manhã" (click)="changed3(i,$event)" (change)="changedNotSelected3(i,$event)" [(ngModel)]="check.tick">
+          </label>    
+          <h3>{{check.name}}</h3>
+      </li><!--
+      <li>
+          <label for="resp9">
+              <div class="box">
+                  <img height="70px" src="./assets/images/tarde.svg">
+                  <div class="tick" style="display: none;">
+                      <img src="./assets/images/tick.png">
+                  </div>
+              </div>
+              <input id="resp9" class="resp" type="checkbox" name="quest1" value="Tarde">
+          </label>    
+          <h3>TARDE</h3>
+      </li>
+      <li>
+          <label for="resp10">
+              <div class="box">
+                  <img height="70px" src="./assets/images/noite.svg">
+                  <div class="tick" style="display: none;">
+                      <img src="./assets/images/tick.png">
+                  </div>
+              </div>
+              <input id="resp10" class="resp" type="checkbox" name="quest1" value="Noite">
+          </label>    
+          <h3>NOITE</h3>
+      </li>-->
+  </ul>
+   <div class="espaco-botao">
+      <button (click)="proximo()">PRÓXIMO</button>
+   </div>
+   <div class="barra-progresso">      
+      <progress value="75" max="100"></progress>
+  </div>    
+</div>
+
+<div class="formulario-final quest-4" *ngIf="open4">
+  <form #f="ngForm" name="form_usuario" action="" method="GET" (ngSubmit)="onSubmit(f)">
+      <div class="form-item">
+          <label for="nome">Nome</label>
+          <input id="nome" name="usuario_nome" type="text" placeholder="" ngModel required #nome>
+         
+        
+        
+      </div>
+
+      <div class="form-item">
+          <label for="email"E-mail>E-mail</label>
+          <input id="email" name="usuario_email"  type="email" placeholder="" 
+           ngModel required email #email> 
+          
+        
+      </div>
+
+      <div class="form-item">
+          <label for="tel">Telefone (WhatsApp)r</label>
+          <input id="tel" name="usuario_tel" type="tel" 
+           ngModel required #telefone>
+         
+         
+      </div>
+      <div class="form-item">
+          <label for="msg">Mensagem</label><br>
+          <textarea name="msg" id="" cols="30" rows="10" id="msg" ngModel required #msg></textarea>
+          
+      </div>
+      <div class="espaco-botao">
+          <button type="submit" [disabled]="!f.valid">Enviar</button>
+      </div>
+      <div class="barra-progresso">
+          <progress value="100" max="100"></progress>
+      </div>    
+  </form>
+</div>
+
+<div class="agradecimento quest-5" *ngIf="open5">
+  <div class="content-textual">
+      <h1>Obrigado(a)!</h1>
+      <img height="100px" src="./assets/images/certo.png">
+      <h2>Recebemos seu formulário e entraremos em contato em breve.</h2>
+  </div> 
+</div>  
+
+
+
+

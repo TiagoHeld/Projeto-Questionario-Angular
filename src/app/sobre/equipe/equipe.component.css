@@ -1,0 +1,81 @@
+
+.container-sobre h1, .container-sobre p{
+    color: #204D77;
+
+}
+
+.container-sobre h1{
+    font-family: "Rubik-Bold";
+    font-size: 24px;
+}
+
+.container-sobre p{
+    margin-top: 33px;
+    font-family: "Lora-Bold";
+    font-size: 18px;
+}
+
+.integrantes{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 35px 0 0 0;
+    padding: 0;
+
+}
+
+.integrantes h4, .integrantes h3 {
+    font-family: "Lora-Bold";
+    font-size: 18px;
+}
+
+.integrantes li{
+   padding-left: 20px;
+   border-radius: 5px;
+   text-align: center;
+
+}
+
+.integrantes h3{
+    margin-top: 20px;
+}
+
+.linkedin{
+    width: 24%;
+    margin-top: 8px;
+}
+
+@media (max-width: 927px) {
+
+    .integrantes {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .membros {
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 768px) {
+  .container-sobre {
+        margin-bottom: 10px;
+   }
+}   
+
+@media (max-width: 768px) {
+    
+    .membros {
+        width: 80%;
+        
+    }
+    .integrantes {
+        flex-direction: column;
+       
+    }
+
+    .integrantes li {
+        padding: 0;
+    }
+}

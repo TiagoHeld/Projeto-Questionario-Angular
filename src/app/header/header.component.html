@@ -1,0 +1,24 @@
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://via.placeholder.com/150x60.png?text=Logo">
+            </a>
+        </div>
+        <ul class="menu" id="menuPrincipal"  [ngClass]="{'responsivo':opened}">
+            <li>
+                <a href="#" routerLink="/home">HOME</a>
+            </li>
+            <li>
+                <a href="#" routerLink="/sobre">SOBRE</a>
+            </li> 
+            <li>
+                <a href="#" routerLink="/login">LOGIN</a>
+            </li>
+            <li>
+                <a href="#" class="icon" (click)="toggle()"></a>
+            </li>
+        </ul>
+        
+    </div>    
+</header>

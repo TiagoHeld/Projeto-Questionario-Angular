@@ -1,0 +1,36 @@
+.central{
+    height: 75vh;
+    background-color: #204D77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    width: 23%;
+    background-color: #D3D3C9;
+    height: 246px;
+}
+
+@media (max-width: 975px) {
+    .login {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .login {
+        width: 50%;
+    }
+}
+
+@media (max-width: 414px) {
+    .login {
+        width: 70%;
+    }
+}

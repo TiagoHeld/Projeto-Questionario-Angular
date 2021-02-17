@@ -1,0 +1,77 @@
+.gerenciamento {
+  background-color: #f3f2ea;
+  width: 100%;
+  padding: 10px 0 90px 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: 10%;
+
+}
+
+.gerenciamento h2 {
+  color: #38dbb2;
+  padding: 20px 0;
+  font-family: "Rubik-Bold";
+  font-size: 24px;
+}
+
+.tabela-gerenciamento {
+  border-collapse: collapse;
+   margin: 0 auto;
+
+}
+
+.tabela-gerenciamento tr {
+
+  border-top: 3px solid #204d77;
+  border-bottom: 3px solid #204d77;
+}
+
+
+.tabela-gerenciamento td, .tabela-gerenciamento th {
+  padding: 10px 15px;
+  font-family: "Lora-Regular";
+  font-size: 18px;
+  
+}
+
+.tabela-gerenciamento th {
+  font-family: "Rubik-Bold";
+  font-size: 18px;
+}
+
+.btn-1 {
+  background-color: #204d77;
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Rubik-Bold";
+  font-size: 14px;
+}
+
+.desc-resp {
+  padding-left: 190px!important;
+}
+
+@media (max-width: 1180px)
+{
+    .gerenciamento {
+        width: 70%;
+    }
+    .tabela-gerenciamento td{
+        font-size: 11px;
+        
+    }
+
+    .tabela-gerenciamento .desc-resp {
+        padding-left: 10px!important;
+    }
+}
+
+@media (max-width:600px) {
+    .gerenciamento {
+        width: 90%;
+    }
+}

@@ -1,0 +1,281 @@
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #D3D3C9;
+}
+.icon {
+    width: 28px;
+    border-top: 12px double #FFF;
+    display: inline-block;
+    padding-top: 5px;
+    position: absolute;
+    top: 26px;
+    border-bottom: 4px solid #FFF;
+    display: none;
+}
+.menu {
+    background-color: #D3D3C9;
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+}
+.menu li{
+    display: inline-block;
+    padding-left: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #204D77;
+    font-family: "Rubik-Bold";
+    font-weight: bold;
+}
+.menu li a:hover{
+    border-bottom: 1px solid #204D77;
+}
+
+@media (min-width:361px) and (max-width: 414px) {
+    
+  .menu a {
+      display: none;
+      margin-left: -40px;
+  }
+
+  .menu li div, .menu li h4 {
+      display: none;
+  }
+
+  .menu.responsivo li h4{
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 15px 0px;
+  }
+
+  .logo a {
+      display: block;
+      margin-left: 3px;
+  }
+  
+  .menu.responsivo .container {
+      height: auto;
+  }
+  .menu.responsivo .logo {
+      display: none;
+  }
+
+
+  .menu.responsivo {     
+    position: absolute;
+    margin-top: 74px;
+    background-color: #142638;
+    height: auto;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+
+   
+ 
+  }
+
+ 
+  .menu.responsivo li {
+      display: block;
+     
+  }
+  .menu.responsivo li a {
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 10px 30px;
+      
+  }
+
+  .menu a.icon {
+      display: block;
+      padding: 0;
+      position: absolute;
+      top: 25px;
+      right: 29px;
+      border-bottom: 5px solid #fff!important;
+      padding-top: 4px;
+  }
+
+  .menu.responsivo li a.icon {
+      padding: 0;
+      position: absolute;
+      top: -30px;
+      right: 29px;
+      border-bottom: 5px solid #fff;
+      padding-top: 4px;
+  }
+}
+
+@media (min-width:321px) and (max-width: 360px) {
+  .menu a {
+      display: none;
+      margin-left: -40px;
+  }
+
+  .menu li div, .menu li h4 {
+      display: none;
+  }
+
+  .menu.responsivo li h4{
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 15px 0px;
+  }
+
+  .logo a {
+      display: block;
+      margin-left: 3px;
+  }
+  
+  .menu.responsivo .container {
+      height: auto;
+  }
+  .menu.responsivo .logo {
+      display: none;
+  }
+
+
+  .menu.responsivo {
+      position: absolute;
+      margin-top: 22px;
+      background-color: #142638;
+      height: auto;
+      width: 100%;
+      margin-left: -18px;
+      position: absolute;
+      margin-top: 74px;
+      background-color: #142638;
+      height: auto;
+      width: 100%;
+      margin-left: -18px;
+      box-sizing: border-box;
+ 
+  }
+
+ 
+  .menu.responsivo li {
+      display: block;
+     
+  }
+  .menu.responsivo li a {
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 10px 35px;
+      
+  }
+
+  .menu.responsivo li h4{
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 15px 0px;
+  }
+
+  .menu.responsivo  li div {
+      display: none;
+  }
+
+  .menu a.icon {
+      display: block;
+      padding: 0;
+      position: absolute;
+      top: 22px;
+      right: 36px;
+      border-bottom: 5px solid #fff!important;
+      padding-top: 4px;
+  }
+
+  .menu.responsivo li a.icon {
+      padding: 0;
+      position: absolute;
+      top: -32px;
+      right: 36px;
+      border-bottom: 5px solid #fff;
+      padding-top: 4px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu a {
+      display: none;
+      margin-left: -40px;
+  }
+
+  .menu li div, .menu li h4 {
+      display: none;
+  }
+
+ 
+
+  .logo a {
+      display: block;
+      margin-left: 3px;
+  }
+  
+  .menu.responsivo .container {
+      height: auto;
+  }
+  .menu.responsivo .logo {
+      display: none;
+  }
+
+
+  .menu.responsivo {
+      position: absolute;
+      margin-top: 22px;
+      background-color: #142638;
+      height: auto;
+      width: 100%;
+      margin-left: -18px;
+      position: absolute;
+      margin-top: 74px;
+      background-color: #142638;
+      height: auto;
+      width: 100%;
+      margin-left: -16px;
+      box-sizing: border-box;
+ 
+  }
+
+ 
+  .menu.responsivo li {
+      display: block;
+     
+  }
+  .menu.responsivo li a {
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 10px 30px;
+      
+  }
+
+  .menu.responsivo li h4{
+      display: block;
+      text-align: left;
+      color: #FFF;
+      padding: 15px 0px;
+  }
+
+  .menu.responsivo  li div {
+      display: none;
+  }
+
+  .menu a.icon {
+      display: block;
+      padding: 0;
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      border-bottom: 5px solid #fff!important;
+      padding-top: 4px;
+  }
+}  

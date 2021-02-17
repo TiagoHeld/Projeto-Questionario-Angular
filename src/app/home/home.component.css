@@ -1,0 +1,49 @@
+.content-principal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #204d77;
+    align-items: center;
+    padding-bottom: 150px;
+    height: auto;
+}
+.banner {
+    width: 50%;
+}
+.questoes {
+    width: 45%;
+    height: 660px;
+    background-color: #69d1eb;
+    margin-top: 90px;
+    padding-bottom: 30px;
+}
+
+
+@media (min-width: 934px) and (max-width: 1422px) {
+    .content-principal {
+        padding-bottom: 45%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .content-principal {
+        flex-direction: column;
+    }
+    .banner {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .questoes {
+        width: 100%;
+    }
+}
+
+@media (min-width:360px) and (max-width: 414px) {
+    .questoes {
+      width: 94%;
+      height: auto;
+    }
+}
+
+

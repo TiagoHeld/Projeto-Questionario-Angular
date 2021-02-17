@@ -1,0 +1,53 @@
+.sobre-wrap{
+    display: flex;
+    background-color: #204D77;
+}
+
+.projeto{
+    width: 50%;
+    padding: 40px 0;
+    line-height: 1.5;
+
+}
+.equipe{
+    width: 45%;
+    background-color: #69D1EB;
+    padding: 40px 0;
+}
+
+
+@media (max-width:1229px) {
+    .projeto {
+        width: 40%;
+    }
+    .equipe {
+        width: 60%;
+    }
+}
+
+@media (max-width: 927px) {
+    .projeto {
+        width: 50%;
+    }
+    .equipe {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-wrap {
+        flex-direction: column;
+    }
+}    
+
+@media (max-width: 768px) {
+
+    .projeto {
+        width: 100%;
+    }
+    .equipe {
+        width: 100%;
+        text-align: center;
+       
+    }
+}    

@@ -1,0 +1,50 @@
+<!--<div *ngFor="let key of lista">
+ {{key.fields["Nome"]}},{{key.fields["Email"]}},{{key.fields["Telefone"]}},{{key.fields["Forma de contato"]}},{{key.fields["Disponibilidade para contato"]}},{{key.fields["Assunto"]}}
+
+</div>-->
+
+
+<div class="gerenciamento">
+  <h2>Gerenciamento das respostas</h2>
+ 
+   <table class="tabela-gerenciamento">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Forma de contato</th>
+          <th>Disponibilidade para contato</th>
+          <th>Assunto</th>
+          <th>Conteudo</th>
+        </tr>
+      </thead> 
+      <tbody>
+        <tr *ngFor="let key of lista">
+            <td *ngIf="key.fields['Nome']">
+              {{key.fields["Nome"]}}
+            </td>
+            <td *ngIf="key.fields['Email']">
+              {{key.fields["Email"]}}
+            </td>
+            <td *ngIf="key.fields['Telefone']">
+              {{key.fields["Telefone"]}}
+            </td>
+            <td *ngIf="key.fields['Forma de contato']">
+              {{key.fields["Forma de contato"]}}
+            </td>
+            <td *ngIf="key.fields['Disponibilidade para contato']">
+              {{key.fields["Disponibilidade para contato"]}}
+            </td>
+            <td *ngIf="key.fields['Assunto']">
+              {{key.fields["Assunto"]}}
+            </td>
+            <td *ngIf="key.fields['Conteúdo']">
+              {{key.fields["Conteúdo"]}}
+            </td>
+            
+          
+        </tr>
+      </tbody>
+  </table>
+

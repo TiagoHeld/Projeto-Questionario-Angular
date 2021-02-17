@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+	font-family:"Lora-Regular"; 
+	src: url(./assets/font/Lora-Regular.ttf);
+	font-weight: normal;
+  	font-style: normal;
+}
+
+@font-face{
+	font-family:"Lora-Bold"; 
+	src: url(./assets/font/Lora-Bold.ttf);
+	font-weight: bold;
+  	font-style: normal;
+}
+
+@font-face{
+	font-family:"Rubik-Bold"; 
+	src: url(./assets/font/Rubik-Bold.ttf);
+}
+.container{
+    max-width: 90%;
+     height: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+ .opcoes-resp {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 90px 0;
+    justify-content: center;
+}
+
+.opcoes-resp li {
+    text-align: center;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 118px;
+    height: 111px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.opcoes-resp h3 {
+    color: #204d77;
+    font-family: "Lora-Bold";
+    font-size: 18px;
+
+}
+
+.tick {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(78,221,184,0.6);
+}
+
+.checado {
+    display: none;
+}
+
+.positivo {
+    display: block;
+}
+
+
+
+
+.espaco-botao {
+    margin: auto;
+    width: 95%;
+}
+.espaco-botao button {
+    width: 100%;
+    font-family: "Rubik-bold";
+    font-size: 24px;
+    display: block;
+    background-color: #204d77;
+    color: #fff;
+    border: 0;
+    height: 40px;
+}
+
+.barra-progresso {
+    text-align: center;
+    padding: 20px 0;
+}
+
+progress {
+    border-radius: 2px;
+    width: 95%;
+    height: 22px;
+    margin-left: 0%;
+}
+
+progress::-webkit-progress-value {
+    background-color: #204d77;
+}
+
+progress::-webkit-progress-bar {
+ background-color: #FFF;
+  border-radius: 2px;
+}
+.container-sobre {
+    width: 77%;
+    margin: 0 auto;
+    margin-bottom: 58%;
+
+}
+
+.backdrop {
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    top: 180px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+  }
+
+
+
+
+
+
+
+

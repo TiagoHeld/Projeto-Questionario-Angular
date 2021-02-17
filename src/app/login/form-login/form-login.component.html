@@ -1,0 +1,14 @@
+<form #item="ngForm" action="" (ngSubmit)="onValidacao(item)">
+    <h1>Área Restrita</h1>
+    <div>
+       <input id="usuario"type="text" name="usuario" placeholder="Usuário" ngModel #usuario>
+    </div>
+    <div>
+      <input id="senha"type="password" name="senha" placeholder="Senha" ngModel #senha>
+    
+    </div>
+    <div>
+      <button class="enviar">Entrar</button>
+    </div>
+    <a href="#">Esqueceu sua senha?</a>
+</form>
